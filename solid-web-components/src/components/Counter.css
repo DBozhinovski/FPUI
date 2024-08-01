@@ -1,0 +1,36 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div#counter {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+  gap: 24px;
+
+  button {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+  }
+}
