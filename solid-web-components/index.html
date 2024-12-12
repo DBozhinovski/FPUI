@@ -4,9 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solid Element Playground</title>
+    <style>
+      * {
+        font-size: 24px;
+      }
+    </style>
   </head>
   <body>
     <script type="module" src="/src/main.tsx"></script>
-    <c-counter></c-counter>
+    <!-- <c-basic></c-basic>
+    <c-basic></c-basic>
+    <c-basic></c-basic> -->
+    <!-- <c-props></c-props>
+    <c-props my-message="Hello from ArmadaJS!"></c-props> -->
+    <!-- <c-slots>
+      <h1 slot="header">Header</h1>
+      <div>Content</div>
+      <h3 slot="footer">Footer</h3>
+    </c-slots> -->
+    <!-- <c-event-handler></c-event-handler> -->
+
+    <!-- <c-counter></c-counter> -->
+
+    <!-- <script>
+      const eventHandler = document.querySelector("c-event-handler");
+      eventHandler.handleClick = () => {
+        alert("Hello from ArmadaJS!");
+      };
+    </script> -->
+
+    <!-- <c-signals initial-count="10"></c-signals>
+
+    <input type="text" id="count-input" />
+    <button id="set-count">Set Count</button>
+
+    <script>
+      const countInput = document.querySelector("#count-input");
+      const signals = document.querySelector("c-signals");
+
+      const setCountButton = document.querySelector("#set-count");
+      setCountButton.addEventListener("click", () => {
+        signals.setCount(countInput.value);
+      });
+    </script> -->
+
+    <c-ssr> Hello world! (server side!) </c-ssr>
   </body>
 </html>

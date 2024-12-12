@@ -1,4 +1,3 @@
-import { createSignal } from "solid-js";
 import { customElement, noShadowDOM } from "solid-element";
 import "./Counter.css";
 
@@ -8,8 +7,8 @@ customElement("c-event-handler", {}, (props, { element }) => {
   const onClick = () => {
     console.log("onclick");
 
-    if (element.onclick) {
-      element.onclick();
+    if (element.handleClick) {
+      element.handleClick();
     } else {
       alert("I'm a fallback alert");
     }
@@ -17,7 +16,7 @@ customElement("c-event-handler", {}, (props, { element }) => {
 
   return (
     <div>
-      <button>Click thingie</button>
+      <button onClick={onClick}>Click thingie</button>
     </div>
   );
 });

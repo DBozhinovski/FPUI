@@ -16,6 +16,7 @@ export default defineConfig({
           "solid-js": "Solid",
         },
       },
+      external: ["supertokens-web-js"],
     },
   },
 });
