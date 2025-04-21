@@ -1,0 +1,10 @@
+#slide-content {
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(bg01.png);
+  background-size: cover;
+}
+
+:root {
+  --slidev-code-font-size: 16px;
+  --slidev-code-line-height: 20px;
+}
