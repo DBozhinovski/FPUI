@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Props & Slots Demo</title>
+    <script type="module" src="./solid-web-components.es.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+      }
+      c-props,
+      c-slots {
+        display: block;
+        margin-bottom: 20px;
+        border: 1px dashed #ccc;
+        padding: 10px;
+      }
+      c-slots header {
+        background-color: #eee;
+        padding: 5px;
+        margin-bottom: 5px;
+      }
+      c-slots footer {
+        background-color: #eee;
+        padding: 5px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Props Demo:</h3>
+    <c-props my-message="Hello from the attribute!"></c-props>
+    <c-props></c-props>
+    <!-- Default message -->
+
+    <hr />
+
+    <h3>Slots Demo:</h3>
+    <c-slots>
+      <h4 slot="header">This is the Header Slot</h4>
+      <p>This content goes into the default slot.</p>
+      <em slot="footer">This is the Footer Slot</em>
+    </c-slots>
+  </body>
+</html>

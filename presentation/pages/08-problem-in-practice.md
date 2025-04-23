@@ -64,3 +64,5 @@ warning: very biased takes
     color: #ff9933;
   }
 </style>
+
+<!-- During my research, I discovered solid element. While it compromises on some things due to the nature of web components, it's a solution that's a perfect fit for out needs. -->

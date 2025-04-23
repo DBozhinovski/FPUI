@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internal State Demo</title>
+    <script type="module" src="./solid-web-components.es.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+      }
+      #counter {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      #counter button {
+        padding: 5px 10px;
+        font-size: 1.2em;
+      }
+      #counter p {
+        font-size: 1.2em;
+        margin: 0;
+        min-width: 80px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <c-counter></c-counter>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signals Interaction Demo</title>
+    <script type="module" src="./solid-web-components.es.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+      }
+      button {
+        margin: 5px;
+        padding: 8px 12px;
+      }
+      input {
+        padding: 8px;
+        margin-right: 5px;
+      }
+      #external-listener p {
+        margin-top: 15px;
+        font-weight: bold;
+      }
+      #external-listener span {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Signals Interaction Demo:</h3>
+    <c-signals id="signals-comp" initial-count="5"></c-signals>
+
+    <hr />
+
+    <h4>External Controls:</h4>
+    <input type="number" id="count-input" value="5" />
+    <button id="set-count-prop">Set via Prop (.setCount)</button>
+    <button id="set-count-event">Set via Event ('set-count')</button>
+
+    <div id="external-listener">
+      <p>External Listener ('count-set' event): <span>?</span></p>
+    </div>
+
+    <script>
+      const signalsElement = document.getElementById("signals-comp");
+      const countInput = document.getElementById("count-input");
+      const externalCountSpan = document.querySelector(
+        "#external-listener span",
+      );
+
+      // Method 1: Use exposed properties
+      document.getElementById("set-count-prop").onclick = () => {
+        if (signalsElement.setCount) {
+          const newValue = parseInt(countInput.value);
+          signalsElement.setCount(newValue);
+          console.log("Set count via property to:", newValue);
+          // Optional: Read back via property (if needed, though event is better)
+          // console.log("Current count (prop read):", signalsElement.count());
+        } else {
+          console.error(".setCount property not found on element.");
+        }
+      };
+
+      // Method 2: Dispatch incoming event
+      document.getElementById("set-count-event").onclick = () => {
+        signalsElement.dispatchEvent(
+          new CustomEvent("set-count", {
+            detail: { count: countInput.value },
+          }),
+        );
+        console.log(
+          "Dispatched 'set-count' event with value:",
+          countInput.value,
+        );
+      };
+
+      // Method 3: Listen for outgoing event
+      signalsElement.addEventListener("count-set", (event) => {
+        externalCountSpan.textContent = event.detail.count;
+        console.log(
+          "Received 'count-set' event with value:",
+          event.detail.count,
+        );
+      });
+
+      // Initial read from property if available
+      if (signalsElement.count) {
+        console.log("Initial count read via property:", signalsElement.count());
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling Demo</title>
+    <script type="module" src="./solid-web-components.es.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+      }
+      button {
+        padding: 10px 15px;
+        font-size: 1em;
+        cursor: pointer;
+      }
+      #output {
+        margin-top: 15px;
+        font-style: italic;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Event Handling Demo (Property Method):</h3>
+    <c-event-handler id="handler1"></c-event-handler>
+    <div id="output"></div>
+
+    <script>
+      const handlerElement = document.getElementById("handler1");
+      const outputDiv = document.getElementById("output");
+      let clickCount = 0;
+
+      // Assign the handler function to the element's property
+      handlerElement.handleClick = () => {
+        clickCount++;
+        outputDiv.textContent = `External handler called ${clickCount} time(s)!`;
+      };
+    </script>
+  </body>
+</html>

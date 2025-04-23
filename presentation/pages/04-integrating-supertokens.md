@@ -35,3 +35,10 @@ graph LR
     font-size: 1.2em;
   }
 </style>
+
+<!--
+- Two types of users
+- Need it yesterday
+- have react - use prebuilt
+- don't have react - use a workaround
+ -->

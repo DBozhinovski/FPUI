@@ -60,3 +60,13 @@ _Check out MDN for the theory_
     }
   }
 </style>
+
+<!--
+- DIY custom tags
+- custom my-label
+- work everywhere
+
+- custom element = creation, naming, registration
+- shadow dom - isolation
+- html templates / slots - templates and children
+-->
