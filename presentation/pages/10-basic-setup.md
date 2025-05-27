@@ -5,11 +5,9 @@ title: "Future-proof your UI: Building with web components"
 
 # Basics: Solid turned web component
 
-```tsx {1|3-7}
+```tsx {1|3-5}
 import { customElement } from "solid-element";
 
-// We have to name this component "c-basic" because the
-// custom element name must have a hyphen in it.
 customElement("c-basic", {}, () => {
   return <h1>Hello world!</h1>;
 });
@@ -35,4 +33,5 @@ customElement("c-basic", {}, () => {
   strong {
       color: #ff9933;
   }
+
 </style>

@@ -9,9 +9,11 @@ title: "Future-proof your UI: Building with web components"
 
 ## Conceptually
 
-- DIY custom tags
-- You can distribute them
-- They work across frameworks
+<ul>
+  <li v-click>DIY custom tags</li>
+  <li v-click>You can distribute them</li>
+  <li v-click>They work across frameworks</li>
+</ul>
 
 </div>
 
@@ -19,12 +21,17 @@ title: "Future-proof your UI: Building with web components"
 
 ## Under the hood
 
-1. The Custom Elements API
-2. Shadow DOM
-3. HTML Templates
+<ol>
+  <li v-click>The Custom Elements API</li>
+  <li v-click>Shadow DOM</li>
+  <li v-click>HTML Templates</li>
+</ol>
+
+<span v-click>
 
 _Check out MDN for the theory_
 
+</span>
 </div>
 
 </div>
@@ -53,7 +60,7 @@ _Check out MDN for the theory_
 
     h2 {
       font-size: 1.8em;
-      background: linear-gradient(to right, #ff9933, #ff9933);
+      background: linear-gradient(to right,rgb(138, 83, 28), rgb(138, 83, 28));
       padding: 5px;
       font-weight: 900;
       margin-bottom: 20px;

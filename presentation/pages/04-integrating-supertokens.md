@@ -3,36 +3,69 @@ layout: center
 title: "Future-proof your UI: Building with web components"
 ---
 
-# How SuperTokens integrates with web apps
+# How SuperTokens integrates <br /> with web apps
 
-<div style="display: flex; justify-content: center;">
+### (from the perspective of a user)
 
-```mermaid {theme: 'dark', scale: 0.73}
-graph LR
-    A["🙎💻"] --> B{"Need it yesterday<br>with prebuilt UI? 🏎️"}
-    B -- "|  ✅ Yes  |" --> C{"Using React or<br>React-family framework? ⚛️"}
-    B -- "|  ❌ No   |" --> D["Use web-js SDK<br>(Build your own UI) 🛠️"]
-
-    C -- "|  ✅ Yes  |" --> E["Use React SDK<br>(Includes Prebuilt UI) 🎉"]
-    C -- "|  ❌ No   |" --> F["❓"]
-
-    style F fill:#8a2be2,stroke:#ccc,stroke-width:2px,color:#fff
-```
-
+<div class="container">
+  <div class="panel"> 
+    <h2 class="text-center" v-click="1"><span>👱</span> <br/> (likes functions)</h2>
+      <ol>  
+        <li v-click="2">Installs our JS SDK</li> 
+        <li v-click="3">Writes some functions</li>
+        <li v-click="4">✅</li>
+      </ol>
+  </div>
+  <div class="panel"> 
+    <h2 class="text-center" v-click="1"><span>🧑‍🦱</span> <br/> (needs it yesterday)</h2>
+    <ol>
+      <li v-click="2">Goes for our pre-built UI</li>
+      <li v-click="3">React? - Installs our ⚛️ SDK - ✅</li>
+      <li v-click="4" v-mark="{ at: 5, color: '#ff9933', type: 'box' }">!React? - DIY UI - ❌</li>
+    </ol>
+  </div>
 </div>
 
 <style>
   h1 {
     font-weight: 900 !important;
     text-shadow: 0 0 12px #fff;
-    font-size: 2.8em !important;
+    font-size: 2.3em !important;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 8px;
     line-height: 1.2;
   }
 
   li {
     font-size: 1.2em;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 24px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    min-width: 100wv;
+    grid-gap: 30px;
+
+    h2 {
+      font-size: 0.9em;
+      padding-bottom: 8px;
+      color: #ff9933;
+    
+      span {
+        font-size: 2em;
+      }
+    }
+  }
+
+  .panel {
+    /* font-size: 1.2em; */
   }
 </style>
 

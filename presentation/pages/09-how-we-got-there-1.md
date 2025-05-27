@@ -101,7 +101,7 @@ title: "Future-proof your UI: Building with web components"
     align-self: flex-end; /* Align container to the right */
 
     strong {
-      color: #666;
+      color:rgb(244, 227, 255);
     }
   }
 
@@ -124,7 +124,7 @@ title: "Future-proof your UI: Building with web components"
   .sb-left {
     /* align-self: flex-end; /* Now handled by container */
     text-align: right;
-    background-color: #ff9933;
+    background-color: rgb(138, 83, 28);
     border-bottom-right-radius: 0px; /* Sharp corner */
   }
 

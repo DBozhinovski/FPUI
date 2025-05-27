@@ -5,9 +5,11 @@ title: "Future-proof your UI: Building with web components"
 
 # Some Context
 
-- Part of an R&D experiment at SuperTokens
-- Turned out pretty good
-- We may publish something based on it
+<ul>
+  <li v-click>Part of an R&D experiment at SuperTokens</li>
+  <li v-click>We're happy with how it turned out</li>
+  <li v-click>We'll use what we learned to build our next SDK</li>
+</ul>
 
 <style>
   h1 {

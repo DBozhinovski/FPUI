@@ -3,19 +3,28 @@ layout: center
 title: "Future-proof your UI: Building with web components"
 ---
 
-# Takeaways
+<h1>So what?</h1>
 
-- WCs are great. For some use cases.
-- Love the idea, hate the API?
-  - use Solid, Preact, Lit, Mitosis...
+<h3 v-click> 🤔 Do you expect me <br/> to just switch to web components now? </h3>
 
-### Good use cases
+<h2 v-click> NO! </h2>
 
-- UI libraries (and design systems)
-- Projects like SuperTokens
-- Widgets, Embeddables
+<p v-click>But also, don't just dismiss them.</p>
+<p v-click>Web components are great.</p>
+<p v-click>...if you have the <strong>right problem</strong>.</p>
 
 <style>
+  strong {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 900;
+    color: rgb(255, 175, 95);
+  }
+
+  p {
+    text-align: center;
+  }
+
   h1 {
     font-weight: 900 !important;
     text-shadow: 0 0 12px #fff;
@@ -26,13 +35,15 @@ title: "Future-proof your UI: Building with web components"
 
   h2 {
     text-align: center;
-    font-size: 1em !important;
+    font-size: 1.8em !important;
+    margin-top: 8px;
+    font-weight: bold;
   }
 
   h3 {
     text-align: center;
     font-size: 1.4em !important;
-    color: #ff9933;
+    color: rgb(255, 175, 95);
     margin-top: 24px;
   }
 
@@ -43,7 +54,6 @@ title: "Future-proof your UI: Building with web components"
   }
 
   li {
-    /* font-size: 1.2em; */
     width: 350px;
   }
 
@@ -59,10 +69,11 @@ title: "Future-proof your UI: Building with web components"
 
 # Thank you!
 
-- Presentation and code - https://tinylink.info/10Bmt
-- SuperTokens web component repo - https://tinylink.info/10BlX
+## darko.io/FPUI
 
-<span class="webpage">< https://darko.io ></span>
+### 👆
+
+### Repos, slides, demos <br/> and resources
 
 <style>
   h1 {
@@ -70,30 +81,20 @@ title: "Future-proof your UI: Building with web components"
     text-shadow: 0 0 12px #fff;
     font-size: 2em !important;
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 32px;
   }
 
   h2 {
     text-align: center;
-    font-size: 1em !important;
+    font-size: 2.6em !important;
+    font-weight: bold;
   }
 
   h3 {
     text-align: center;
     font-size: 1.4em !important;
-    color: #ff9933;
+    color:rgb(255, 175, 95);
     margin-top: 24px;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  li {
-    font-size: 1.2em;
-    width: 350px;
   }
 
   .slidev-layout {
@@ -101,17 +102,5 @@ title: "Future-proof your UI: Building with web components"
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  .webpage {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 38px;
-    left: 0;
-    width: 100%;
-    font-size: 1.2em;
-    font-weight: bold;
   }
 </style>

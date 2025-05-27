@@ -5,9 +5,7 @@ title: "Future-proof your UI: Building with web components"
 
 # Slots (AKA. Children)
 
-```tsx {1-2|3-19}
-// Use standard HTML `<slot>` elements inside your
-// Solid component for content projection.
+```tsx {all|6-8|9-11}
 import { customElement } from "solid-element";
 
 customElement("c-slots", {}, () => {
@@ -39,10 +37,12 @@ customElement("c-slots", {}, () => {
 </c-slots>
 ```
 
-## Caveats ⚠️
+## ⚠️ Caveats ⚠️
 
-- Slots natively work ONLY in the Shadow DOM
-- But we can polyfill them easily
+<ul>
+  <li v-click>Slots natively work ONLY in the Shadow DOM</li>
+  <li v-click>But we can polyfill them easily</li>
+</ul>
 
 <style>
   h1 {
@@ -51,10 +51,11 @@ customElement("c-slots", {}, () => {
   }
 
   h2 {
-    margin-top: 20px;
+    margin-top: 60px;
+    margin-bottom: 20px;
   }
 
   .slidev-layout { display: flex; flex-direction: column; align-items: center; justify-content: center; }
-  code { font-size: 0.8em; }
+  code { font-size: 1.2em; }
   strong { color: #ff9933; }
 </style>

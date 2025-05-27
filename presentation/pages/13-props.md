@@ -5,13 +5,7 @@ title: "Future-proof your UI: Building with web components"
 
 # Props (Attributes)
 
-```tsx {1-2|4-5|7-16}
-// Define props and their default values as the
-// second argument to `customElement`.
-
-// `solid-element` automatically maps
-// these **camelCase** props to **kebab-case** HTML attributes.
-
+```tsx {3-10}
 import { customElement } from "solid-element";
 
 customElement(
@@ -32,14 +26,12 @@ customElement(
 <c-props my-message="Hello from WebExpo!"></c-props>
 ```
 
-## Caveats ⚠️
+## ⚠️ Caveats ⚠️
 
-- We're limited by the data type:
-  - String
-  - Booleans (kinda)
-- For anything fancier:
-  - Serialize/deserialize
-  - Pass via DOM node
+<ul>
+  <li v-click>We're limited by the data type: String and Booleans only!</li>
+  <li v-click>For anything fancier: Serialize/deserialize pass via the DOM node</li>
+</ul>
 
 <style>
   h1 {
@@ -48,10 +40,11 @@ customElement(
   }
 
   h2 {
-    margin-top: 20px;
+    margin-top: 60px;
+    margin-bottom: 20px;
   }
 
   .slidev-layout { display: flex; flex-direction: column; align-items: center; justify-content: center; }
-  code { font-size: 0.8em; }
+  code { font-size: 1.2em; }
   strong { color: #ff9933; }
 </style>

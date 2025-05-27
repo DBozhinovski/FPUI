@@ -3,10 +3,46 @@ layout: iframe-left
 url: ../demos/03-event-handling.html
 ---
 
-# The Demo: Event Handling (Property)
+# Demo: Event Handling
 
-- An external script selects `c-event-handler` and assigns a function to its `handleClick` property.
-- When you click the button _inside_ the web component:
-  1.  The internal `onClick` runs.
-  2.  It checks for and calls the external `element.handleClick()`.
-  3.  The external function updates the text below the button.
+<div>
+
+👈 Live output of the `c-props` web component.
+
+</div>
+
+<ol>
+  <li v-click="1"> 
+  
+`c-event-handler` is assigned a function to its `handleClick` property.
+  
+  </li>
+  <li v-click="2"> 
+  
+When you click the button _inside_ the web component:
+
+<ol>
+
+  <li v-click="3">
+
+The internal `onClick` runs.
+
+  </li>
+
+  <li v-click="4">
+
+It checks for and calls the external `element.handleClick()`.
+
+  </li>
+
+  <li v-click="5">
+
+The external function updates the text below the button.
+
+  </li>
+
+  </ol>
+
+  </li>
+
+</ol>

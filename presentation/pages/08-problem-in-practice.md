@@ -37,10 +37,9 @@ customElement("my-greeting", {}, () => {
 ```
 ````
 
-<div class="warning">
-
-warning: very biased takes
-
+<div class="solid" v-click="2">
+  <img src="../logo.png" />
+  <p>PSA: This is now a <br /> SolidJS presentation.</p>
 </div>
 
 <style>
@@ -53,16 +52,26 @@ warning: very biased takes
     margin-bottom: 32px;
   }
 
-  .warning {
+  .solid {
     position: absolute;
-    bottom: 30px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
+    right: 60px;
+    bottom: 40px;
+    transform: rotate(-25deg);
+    color: #0af;
     font-weight: 900;
-    color: #ff9933;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  img {
+    width: 130px;
+    transform: rotate(-25deg);
   }
 </style>
 
-<!-- During my research, I discovered solid element. While it compromises on some things due to the nature of web components, it's a solution that's a perfect fit for out needs. -->
+<!--
+During my research, I discovered solid element. While it compromises on some things due to the nature of web components, it's a solution that's a perfect fit for out needs.
+-->
