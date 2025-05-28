@@ -12,30 +12,24 @@ url: ../demos/03-event-handling.html
 </div>
 
 <ol>
-  <li v-click="1"> 
-  
+  <li v-click="1">
+
 `c-event-handler` is assigned a function to its `handleClick` property.
-  
+
   </li>
-  <li v-click="2"> 
-  
+  <li v-click="2">
+
 When you click the button _inside_ the web component:
 
 <ol>
 
   <li v-click="3">
 
-The internal `onClick` runs.
+It calls the external `element.handleClick`.
 
   </li>
 
   <li v-click="4">
-
-It checks for and calls the external `element.handleClick()`.
-
-  </li>
-
-  <li v-click="5">
 
 The external function updates the text below the button.
 
