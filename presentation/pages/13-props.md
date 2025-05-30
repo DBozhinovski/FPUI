@@ -23,7 +23,7 @@ customElement(
 # Usage in HTML
 
 ```html
-<c-props my-message="Hello from WebExpo!"></c-props>
+<c-props my-message="Hello from CityJS!"></c-props>
 ```
 
 ## ⚠️ Caveats ⚠️
