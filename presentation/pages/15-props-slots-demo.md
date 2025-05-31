@@ -12,8 +12,8 @@ url: ../demos/02-props-slots.html
 👈 Live output of the `c-props` web component.
 
 </div>
-  
-  - 1st: Prop: `my-message="Hello from the attribute!"`.
+
+  - 1st: Prop: `my-message="Hello from CityJS!"`.
   - 2nd: Uses the default `"hello world!"` defined in the component.
 
 </div>
